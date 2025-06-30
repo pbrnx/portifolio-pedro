@@ -58,7 +58,7 @@ const dataProjects = [
 
 {
     title: 'Youtube Video Downloader',
-    date: 'Dezembro de 2024',
+    date: 'Abril de 2024',
     description: `Aplicação web com back-end em Python que permite baixar vídeos do YouTube em diversas resoluções, utilizando a biblioteca <code>yt_dlp</code> e o <code>FFmpeg</code> para juntar áudio e vídeo quando necessário.<br><br>
 
     Funciona localmente via navegador (porta 25565), com opção de liberação para rede externa via port forwarding. A interface permite buscar vídeos pela URL, selecionar resolução e iniciar o download com um clique.`,
