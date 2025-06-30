@@ -1,0 +1,24 @@
+{
+  "name": "portifolio-pedro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server ./ -p 3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pbrnx/portifolio-pedro.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pbrnx/portifolio-pedro/issues"
+  },
+  "homepage": "https://github.com/pbrnx/portifolio-pedro#readme",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
