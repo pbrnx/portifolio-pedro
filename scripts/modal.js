@@ -15,9 +15,9 @@ const dataProjects = [
             • Totalmente sem intervenção manual, focado em ambientes enterprise e compliance.<br><br>
             Backend desenvolvido em Node.js/Express, frontend mínimo em HTML/JS integrado via WebReport.
         `,
-        videoSrc: 'https://www.youtube.com', // Se tiver vídeo demo, adicione o link aqui
+        videoSrc: 'https://streamable.com/e/xmrrch', // Se tiver vídeo demo, adicione o link aqui
         repository: 'https://github.com/pbrnx/adobe-api-deploy',
-        site: ''
+        site: 'https://github.com/pbrnx/adobe-api-deploy'
 }
 ,
 {
@@ -39,9 +39,9 @@ const dataProjects = [
 
     ⚠️ A API roda na porta 3000, então certifique-se de que nenhuma outra aplicação esteja usando essa porta. O frontend pode rodar em outra porta (ex: 5173).
     `,
-    videoSrc: 'https://streamable.com/e/usgia6',
-    linkedin: '', // insira o link se houver
-    repository: 'https://github.com/rhuanbello/happvida-fitness', // substitua pela URL correta se necessário
+    videoSrc: 'https://streamable.com/e/mr63yd',
+
+    repository: 'https://github.com/pbrnx/hAppVidaFitness', // substitua pela URL correta se necessário
     site: 'http://localhost:5173/' // ou o link do deploy, se existir
 },
 
@@ -51,10 +51,9 @@ const dataProjects = [
     description: `TranscriPy é uma aplicação de linha de comando (CLI) para transcrição de áudios com Whisper da OpenAI. Permite converter arquivos em texto de forma rápida, com suporte a múltiplos idiomas, formatos (.txt e .srt) e aceleração por GPU quando disponível.<br><br>
 
     Desenvolvido em Python, o projeto utiliza FFmpeg, prompt_toolkit e PyTorch. Ideal para automatizar transcrições de entrevistas, reuniões ou podcasts diretamente do terminal.`,
-    videoSrc: '', // link opcional para demonstração em vídeo
-    linkedin: '', // link opcional de post no LinkedIn
-    repository: 'https://github.com/seuusuario/transcripy', // substitua pela URL real
-    site: '' // não aplicável, projeto CLI
+    videoSrc: 'https://streamable.com/e/ffgefn', // link opcional para demonstração em vídeo
+    repository: 'https://github.com/pbrnx/TranscriPy', // substitua pela URL real
+    site: 'https://github.com/pbrnx/TranscriPy' 
 },
 
 {
@@ -64,7 +63,7 @@ const dataProjects = [
 
     Funciona localmente via navegador (porta 25565), com opção de liberação para rede externa via port forwarding. A interface permite buscar vídeos pela URL, selecionar resolução e iniciar o download com um clique.`,
     videoSrc: '', // pode colocar link para gif, demo ou vídeo futuramente
-    linkedin: '', // opcional
+
     repository: 'https://github.com/seuusuario/youtube-video-downloader', // substitua pela real
     site: '' // app local, não tem site online
 },
@@ -82,7 +81,7 @@ const openModal = () => {
     const modalDate = modal.querySelector('span')
     const modalLinkProject = modal.querySelector('.links a.link-project')
     const modalLinkRepository = modal.querySelector('.links a.link-repository')
-    const modalLinkLinkedin = modal.querySelector('.links a.link-linkedin')
+
     const iframe = modal.querySelector('.video iframe')
 
     box.forEach((item, index) => {
@@ -100,7 +99,7 @@ const openModal = () => {
             modalDate.innerHTML = dataProjects[index].date
             modalLinkProject.setAttribute('href', dataProjects[index].site) 
             modalLinkRepository.setAttribute('href', dataProjects[index].repository) 
-            modalLinkLinkedin.setAttribute('href', dataProjects[index].linkedin) 
+
             iframe.setAttribute('src', dataProjects[index].videoSrc + '?autoplay=1&amp;loop=0')
 
         }
