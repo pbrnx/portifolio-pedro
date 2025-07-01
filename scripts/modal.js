@@ -37,12 +37,11 @@ const dataProjects = [
     • Node.js (scripts e gerenciamento)<br>
     • npm-run-all (execução simultânea da API e frontend)<br><br>
 
-    ⚠️ A API roda na porta 3000, então certifique-se de que nenhuma outra aplicação esteja usando essa porta. O frontend pode rodar em outra porta (ex: 5173).
+    A API roda na porta 3000, então certifique-se de que nenhuma outra aplicação esteja usando essa porta. O frontend pode rodar em outra porta (ex: 5173).
     `,
     videoSrc: 'https://streamable.com/e/mr63yd',
-
-    repository: 'https://github.com/pbrnx/hAppVidaFitness', // substitua pela URL correta se necessário
-    site: 'http://localhost:5173/' // ou o link do deploy, se existir
+    repository: 'https://github.com/pbrnx/hAppVidaFitness', 
+    site: 'https://happvida.netlify.app/login' 
 },
 
 {
@@ -50,9 +49,9 @@ const dataProjects = [
     date: 'Abril de 2025',
     description: `TranscriPy é uma aplicação de linha de comando (CLI) para transcrição de áudios com Whisper da OpenAI. Permite converter arquivos em texto de forma rápida, com suporte a múltiplos idiomas, formatos (.txt e .srt) e aceleração por GPU quando disponível.<br><br>
 
-    Desenvolvido em Python, o projeto utiliza FFmpeg, prompt_toolkit e PyTorch. Ideal para automatizar transcrições de entrevistas, reuniões ou podcasts diretamente do terminal.`,
-    videoSrc: 'https://streamable.com/e/ffgefn', // link opcional para demonstração em vídeo
-    repository: 'https://github.com/pbrnx/TranscriPy', // substitua pela URL real
+    Desenvolvido em Python, o projeto utiliza FFmpeg, prompt_toolkit e PyTorch. <br><br>Ideal para automatizar transcrições de entrevistas, reuniões ou podcasts diretamente do terminal.`,
+    videoSrc: 'https://streamable.com/e/ffgefn', 
+    repository: 'https://github.com/pbrnx/TranscriPy',
     site: 'https://github.com/pbrnx/TranscriPy' 
 },
 
@@ -62,10 +61,9 @@ const dataProjects = [
     description: `Aplicação web com back-end em Python que permite baixar vídeos do YouTube em diversas resoluções, utilizando a biblioteca <code>yt_dlp</code> e o <code>FFmpeg</code> para juntar áudio e vídeo quando necessário.<br><br>
 
     Funciona localmente via navegador (porta 25565), com opção de liberação para rede externa via port forwarding. A interface permite buscar vídeos pela URL, selecionar resolução e iniciar o download com um clique.`,
-    videoSrc: '', // pode colocar link para gif, demo ou vídeo futuramente
-
-    repository: 'https://github.com/seuusuario/youtube-video-downloader', // substitua pela real
-    site: '' // app local, não tem site online
+    videoSrc: 'https://streamable.com/c/pzhxw9', 
+    repository: 'https://github.com/pbrnx/YOUTUBE-DOWNLOADER', 
+    site: 'https://github.com/pbrnx/YOUTUBE-DOWNLOADER' 
 },
 
 ]
