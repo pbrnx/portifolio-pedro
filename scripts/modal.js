@@ -61,9 +61,9 @@ const dataProjects = [
     description: `Aplicação web com back-end em Python que permite baixar vídeos do YouTube em diversas resoluções, utilizando a biblioteca <code>yt_dlp</code> e o <code>FFmpeg</code> para juntar áudio e vídeo quando necessário.<br><br>
 
     Funciona localmente via navegador (porta 25565), com opção de liberação para rede externa via port forwarding. A interface permite buscar vídeos pela URL, selecionar resolução e iniciar o download com um clique.`,
-    videoSrc: 'https://streamable.com/c/pzhxw9', 
+    videoSrc: 'https://streamable.com/e/pzhxw9?', 
     repository: 'https://github.com/pbrnx/YOUTUBE-DOWNLOADER', 
-    site: 'https://github.com/pbrnx/YOUTUBE-DOWNLOADER' 
+    site: 'https://youtube-downloader-9dqe.onrender.com' 
 },
 
 ]
