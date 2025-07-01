@@ -54,6 +54,26 @@ const dataProjects = [
     repository: 'https://github.com/pbrnx/TranscriPy',
     site: 'https://github.com/pbrnx/TranscriPy' 
 },
+{
+    title: 'Dashboard DPT — Controle de Chamados',
+    date: 'Julho de 2025',
+    description: `
+        Dashboard interativo criado para o controle operacional de chamados na área de <b>Processamento de Texto (DPT)</b> da PwC.<br><br>
+        O sistema foi projetado para substituir controles manuais em planilhas, trazendo uma visualização centralizada, responsiva e altamente customizada.<br><br>
+        <b>Principais funcionalidades:</b><br>
+        • Tabela dinâmica com destaque visual por status (novo, atrasado, dúvida, assumido, não tratado);<br>
+        • Ordenação automática por prazo, sequência e data de abertura (basta clicar no cabeçalho);<br>
+        • Filtro por etapa do fluxo de chamados e pesquisa instantânea por texto;<br>
+        • Legenda interativa: clique nos ícones para filtrar chamados por status;<br>
+        • Lógica de cores automática, com animação suave nas linhas ao filtrar ou buscar;<br>
+        • Layout clean e responsivo, focado em facilitar a rotina do usuário DPT.<br><br>
+        <b>Stack:</b> HTML5, CSS3 (custom), JavaScript ES6+ (sem frameworks).<br><br>
+        Projeto 100% client-side e pronto para integração futura com APIs ou bases externas. Nenhum dado sensível exposto nesta versão.<br>
+    `,
+    videoSrc: 'https://streamable.com/e/wuh5c6', // Adicione o link de vídeo demo se desejar
+    repository: 'https://github.com/pbrnx/Dashboard-Controle-Chamados', // Adicione o link do repositório, se público
+    site: 'https://dashboard-controle-chamados.vercel.app/' // Adicione o link de demo, se houver
+},
 
 {
     title: 'Youtube Video Downloader',
@@ -65,6 +85,7 @@ const dataProjects = [
     repository: 'https://github.com/pbrnx/YOUTUBE-DOWNLOADER', 
     site: 'https://youtube-downloader-9dqe.onrender.com' 
 },
+
 
 ]
 
