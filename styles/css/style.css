@@ -6,3 +6,56 @@
 
 }
 
+
+/* Banner em coluna, foto em cima do texto */
+section#sobre .banner {
+  display: flex;              /* já existe, só reforça */
+  flex-direction: column;     /* empilha vertical */
+  align-items: center;        /* centra horizontalmente */
+  text-align: center;         /* centra textos */
+  gap: 2rem;                  /* espaço entre foto e texto */
+}
+
+/* Foto antes do bloco .intro */
+section#sobre .banner .profile {
+  order: -1;                  /* sobe a foto */
+  margin-bottom: 1rem;        /* espaço extra embaixo */
+}
+
+
+
+/* Centraliza os botões */
+section#sobre .banner .actions {
+  justify-content: center;
+}
+
+/* Garante “Sobre mim” alinhado no centro e com margem */
+section#sobre .about {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+section#sobre .banner .intro .actions a,
+section#sobre .banner .intro .actions button {
+  font-size: 16px;
+  padding: 18px 44px;
+  border-radius: 32px;
+  font-weight: 600;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  margin: 0 8px;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+section#sobre .banner .intro .actions a:hover,
+section#sobre .banner .intro .actions button:hover {
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 4px 18px rgba(0,0,0,0.10);
+}
+
+section#sobre .banner .intro .title p {
+  font-size: 25px !important;   /* ou use px: 26px */
+  font-weight: 600;
+  color: #bfbfff;                 /* ou outra cor se quiser mais destaque */
+  margin-top: 1rem;
+  line-height: 130%;
+}
