@@ -126,7 +126,7 @@ const initTypingAnimation = () => {
     const typingAnimation = (element) => {
 
         if (element == title) {
-            element.innerHTML = "Hi! I'm"
+            element.innerHTML = "Hi, I'm"
             const textToArray = element.innerHTML.split('')
             element.innerHTML = ''
 
