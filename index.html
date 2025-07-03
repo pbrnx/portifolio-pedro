@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="qk6Sv7s_z-kzYtHiCVe1-9lr6BCjC1-II9k5V7Lt3c4" />
-    <title>Pedro Barone - Fullstack Developer</title>
+    <title data-i18n="page_title">Pedro Barone - Fullstack Developer</title>
     <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/css/style.css">
@@ -21,14 +21,17 @@
                 <i class="ri-close-line hidden"></i>
             </div>
             <a href="#sobre">
-                <h2>Portfolio</h2>
+                <h2 data-i18n="portfolio">Portfolio</h2>
             </a>    
             <div class="toggle">
-                <input type="checkbox" name="checkbox" id="checkbox">
-                <label for="checkbox" class="label">
-                    <div class="box"></div>
-                </label>
+            <input type="checkbox" id="langSwitch">
+            <label for="langSwitch" class="label">
+                <span id="langLabel">EN</span>
+                <span class="knob"></span>
+            </label>
             </div>
+
+
         </div>
     </header>
 
@@ -37,22 +40,23 @@
             <div class="banner">
                 <div class="intro">
                     <div class="title">
-                        <h1></h1> 
-                        <span></span>
-                        <p></p>
+                        <h1 id="helloTitle"></h1>
+                        <span id="helloName"></span>
+                        <p id="helloProfession"></p>
+
                     </div>
                     <div class="actions">
-                        <a href="assets/cv/Pedro_Barone_Desenvolvedor_Fullstack.pdf" download>Download resume</a>
-                        <a href="mailto:pedrobarone27709@gmail.com" target="_blank">Contact</a>
+                        <a href="assets/cv/Pedro_Barone_Desenvolvedor_Fullstack.pdf" download data-i18n="download_cv">Download resume</a>
+                        <a href="mailto:pedrobarone27709@gmail.com" target="_blank" data-i18n="contact_btn">Contact</a>
                     </div>
                 </div>
-                <div class="profile" >
-                    <img src="assets/avatar.jfif" alt="avatar" width="40%" style="border-radius: 200px;" >
+                <div class="profile">
+                    <img src="assets/avatar.jfif" alt="avatar" width="40%" style="border-radius: 200px;">
                 </div>
             </div>
             <div class="about">
-                <h2>About Me</h2>
-                <p>
+                <h2 data-i18n="about_me">About Me</h2>
+                <p data-i18n="about_desc">
                     I’m a full-stack developer specialized in automation, system integration, and business process optimization. I have hands-on experience in projects using JavaScript, Python, SQL, and APIs, delivering robust solutions with platforms like OpenText Content Server, Adobe Sign, and analytical dashboards. My focus is to combine technology, efficiency, and usability to solve real problems, always aiming for business impact and international scalability.
                 </p>
             </div>
@@ -62,7 +66,7 @@
     <section id="skills" class="js-section">
         <div class="skills">
             <div class="container">
-                <h2>Skills</h2>
+                <h2 data-i18n="skills">Skills</h2>
                 <div class="cards">
                     <div class="box">
                         <p>HTML5</p>
@@ -107,102 +111,17 @@
 
     <section id="projects" class="js-section">
         <div class="container">
-            <h2>Projects</h2>
+            <h2 data-i18n="projects">Projects</h2>
             <div class="highlights">
-                <h3>Highlights</h3>
+                <h3 data-i18n="highlights">Highlights</h3>
                 <div class="cards-projects">
-                    <div class="box">
-                        <div class="cover">
-                            <img src="assets/projects/adobe.png" alt="adobe sign integration" >
-                            <div class="details">
-                                <p>Adobe Sign Integration</p>
-                                <div class="mini-languages">
-                                    <img src="assets/mini-languages/html.svg" alt="html">
-                                    <img src="assets/mini-languages/git.svg" alt="git">
-                                    <img src="assets/mini-languages/javascript.svg" alt="javascript">
-                                    <img src="assets/mini-languages/nodejs.svg" alt="nodejs">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="description">
-                            <p>May 2025</p>
-                            <a>See more</a>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="cover">
-                            <img src="assets/projects/happvida.png" alt="hAppVida fitness">
-                            <div class="details">
-                                <p>hAppVida Fitness</p>
-                                <div class="mini-languages">
-                                    <img src="assets/mini-languages/html.svg" alt="html">
-                                    <img src="assets/mini-languages/sass.svg" alt="sass">
-                                    <img src="assets/mini-languages/javascript.svg" alt="javascript">
-                                    <img src="assets/mini-languages/react.svg" alt="react">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="description">
-                            <p>October 2023</p>
-                            <a>See more</a>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="cover">
-                            <img src="assets/projects/transcripy.png" alt="transcripy">
-                            <div class="details">
-                                <p>TranscriPy</p>
-                                <div class="mini-languages">
-                                    <img src="assets/mini-languages/python.svg" alt="python">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="description">
-                            <p>April 2025</p>
-                            <a>See more</a>
-                        </div>
-                    </div>
+                    <!-- Cards dos projetos são gerados dinamicamente, então a tradução é feita no JS -->
                 </div>
             </div>
-
             <div class="allprojects">
-                <h3>All Projects</h3>
+                <h3 data-i18n="all_projects">All Projects</h3>
                 <div class="cards-projects">
-                    <div class="box">
-                        <div class="cover">
-                            <img src="assets/projects/dashdpt.png" alt="DPT dashboard">
-                            <div class="details">
-                                <p>Dashboard — Ticket Control</p>
-                                <div class="mini-languages">
-                                    <img src="assets/mini-languages/html.svg" alt="html">
-                                    <img src="assets/mini-languages/css.svg" alt="css">
-                                    <img src="assets/mini-languages/javascript.svg" alt="javascript">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="description">
-                            <p>July 2025</p>
-                            <a>See more</a>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="cover">
-                            <img src="assets/projects/youtubedownloader.png" alt="youtube downloader">
-                            <div class="details">
-                                <p>YouTube Downloader</p>
-                                <div class="mini-languages">
-                                    <img src="assets/mini-languages/html.svg" alt="html">
-                                    <img src="assets/mini-languages/css.svg" alt="css">
-                                    <img src="assets/mini-languages/javascript.svg" alt="javascript">
-                                    <img src="assets/mini-languages/python.svg" alt="python">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="description">
-                            <p>April 2024</p>
-                            <a>See more</a>
-                        </div>
-                    </div>
+                    <!-- Cards dos projetos são gerados dinamicamente, então a tradução é feita no JS -->
                 </div>
             </div>
         </div> 
@@ -211,7 +130,7 @@
     <section id="contacts" class="js-section">
         <div class="contacts">
             <div class="container">
-                <h2>Contacts</h2>
+                <h2 data-i18n="contacts">Contacts</h2>
                 <div class="icons">
                     <div class="icon">
                         <a href="mailto:pedrobarone2709@gmail.com" target="_blank">
@@ -220,7 +139,7 @@
                             </div>
                         </a>
                         <a href="mailto:pedrobarone2709@gmail.com" target="_blank">
-                            <p>Email</p>
+                            <p data-i18n="email_label">Email</p>
                         </a>
                         <a href="mailto:pedrobarone2709@gmail.com" target="_blank">
                             <p>pedrobarone2709@gmail.com</p>
@@ -233,7 +152,7 @@
                             </div>
                         </a>
                         <a href="https://api.whatsapp.com/send?phone=5511972969552" target="_blank">
-                            <p>Phone</p>
+                            <p data-i18n="phone_label">Phone</p>
                         </a>
                         <a href="https://api.whatsapp.com/send?phone=5511972969552" target="_blank">
                             <p>+55 (11) 97296-9552</p>
@@ -246,7 +165,7 @@
                             </div>
                         </a>
                         <a href="https://www.linkedin.com/in/pedro-barone/" target="_blank">
-                            <p>LinkedIn</p>
+                            <p data-i18n="linkedin_label">LinkedIn</p>
                         </a>
                         <a href="https://www.linkedin.com/in/pedro-barone/" target="_blank">
                             <p>@pedro-barone</p>
@@ -259,7 +178,7 @@
                             </div>
                         </a>
                         <a href="https://github.com/pbrnx" target="_blank">
-                            <p>GitHub</p>
+                            <p data-i18n="github_label">GitHub</p>
                         </a>
                         <a href="https://github.com/pbrnx" target="_blank">
                             <p>@pbrnx</p>
@@ -285,18 +204,18 @@
             </div>
         </div>
         <div class="links">
-            <a href="" target="_blank" class="link-project">Access project</a>
-            <a href="" target="_blank" class="link-repository">Access repository</a>
+            <a href="" target="_blank" class="link-project" data-i18n="access_project">Access project</a>
+            <a href="" target="_blank" class="link-repository" data-i18n="access_repository">Access repository</a>
         </div>
     </div>
 
     <div class="menuOpen hidden">
-        <h2>Welcome to my Portfolio :)</h2>
+        <h2 data-i18n="welcome_portfolio">Welcome to my Portfolio :)</h2>
         <nav>
-            <a href="#sobre">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contacts">Contacts</a>
+            <a href="#sobre" data-i18n="about_me_nav">About</a>
+            <a href="#skills" data-i18n="skills_nav">Skills</a>
+            <a href="#projects" data-i18n="projects_nav">Projects</a>
+            <a href="#contacts" data-i18n="contacts_nav">Contacts</a>
         </nav>
     </div>
 

@@ -59,3 +59,105 @@ section#sobre .banner .intro .title p {
   margin-top: 1rem;
   line-height: 130%;
 }
+
+/* ================================================
+   Toggle container e input invisível
+================================================ */
+.toggle {
+  position: relative;
+  display: inline-block;
+}
+.toggle input {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+
+/* ================================================
+   Track (a trilha branca / roxa)
+================================================ */
+.toggle .label {
+  position: relative;
+  display: block;
+  width: 8rem;       /* ajuste se quiser maior/menor */
+  height: 3rem;      /* ajuste se quiser mais alta/baixa */
+  border-radius: 1.5rem;
+  background: #F9F9F9;            /* estado OFF */
+  transition: background 0.3s ease;
+  overflow: hidden;
+}
+
+/* ================================================
+   Texto EN / PT CENTRALIZADO
+================================================ */
+#langLabel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #13131F;                 /* cor no OFF */
+  pointer-events: none;
+  z-index: 4;
+  transition: color 0.3s ease;
+}
+
+/* ================================================
+   Bolinha (knob)
+================================================ */
+.knob {
+  position: absolute;
+  top: 0.2rem;    /* centraliza vertical */
+  left: 0.2rem;   /* começa à esquerda */
+  width: 2.6rem;  /*  Knob menor que a track */
+  height: 2.6rem;
+  background: #FFFFFF;
+  border: 2px solid #8257E6;
+  border-radius: 50%;
+  transition:
+    left 0.3s cubic-bezier(.4,1.4,.4,1),
+    background 0.3s ease,
+    border-color 0.3s ease;
+  z-index: 2;
+}
+
+/* ================================================
+   Estado CHECKED = switch “on”
+================================================ */
+.toggle input:checked + .label {
+  background: #8257E6;  /* roxo */
+}
+
+.toggle input:checked + .label .knob {
+  left: calc(100% - 2.8rem); /* move pra extrema direita */
+  background: #8257E6;       /* a mesma cor da track */
+  border-color: #FFFFFF;
+}
+
+/* ================================================
+   Responsivo (opcional)
+================================================ */
+@media (max-width: 480px) {
+  .toggle .label {
+    width: 5.5rem;
+    height: 2.4rem;
+  }
+  .knob {
+    width: 1.8rem;
+    height: 1.8rem;
+    top: 0.3rem;
+    left: 0.3rem;
+  }
+  .toggle input:checked + .label .knob {
+    left: calc(100% - 2.1rem);
+  }
+  #langLabel {
+    font-size: 1rem;
+  }
+}
