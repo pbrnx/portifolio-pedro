@@ -82,6 +82,16 @@ window.dataProjectsEN = [
     repository: 'https://github.com/pbrnx/YOUTUBE-DOWNLOADER',
     site: 'https://youtube-downloader-9dqe.onrender.com',
     image: 'assets/projects/youtubedownloader.png'
+  },
+  {
+    title: 'Realtime Log Viewer',
+    date: 'July 2025',
+    description: `A web application complementing the **Adobe API Deploy** integration, providing real-time auditing and visualization of server logs. It uses Server-Sent Events (SSE) for live updates, allowing users to pause, search, filter by log level (INFO, WARN, ERROR, EVENT), and clear logs. This viewer is crucial for monitoring the background processes and integrations of the Adobe API Deploy, ensuring full visibility into document signature workflows and Content Server operations.<br><br>
+    The backend streams log data, which the frontend then parses, highlights (for search terms), and displays, organizing entries into groups for readability. It's an essential tool for troubleshooting and verifying the automated workflows of the Adobe Sign and OpenText Content Server integration.`,
+    videoSrc: 'https://streamable.com/e/cg4d33',
+    repository: 'https://github.com/pbrnx/signature-orchestrator-api',
+    site: 'https://github.com/pbrnx/signature-orchestrator-api',
+    image: 'assets/projects/logview.png'
   }
 ];
 
@@ -165,6 +175,17 @@ window.dataProjectsPT = [
     repository: 'https://github.com/pbrnx/YOUTUBE-DOWNLOADER',
     site: 'https://youtube-downloader-9dqe.onrender.com',
     image: 'assets/projects/youtubedownloader.png'
+  },
+
+  {
+    title: 'Realtime Log Viewer',
+    date: 'Julho de 2025',
+    description: `Uma aplicação web que complementa a integração **Adobe API Deploy**, fornecendo auditoria e visualização em tempo real dos logs do servidor. Ela utiliza Server-Sent Events (SSE) para atualizações ao vivo, permitindo que os usuários pausem, pesquisem, filtrem por nível de log (INFO, WARN, ERROR, EVENT) e limpem os logs. Este visualizador é crucial para monitorar os processos em segundo plano e as integrações do Adobe API Deploy, garantindo visibilidade total nos fluxos de trabalho de assinatura de documentos e nas operações do Content Server. <br><br>
+    O backend transmite dados de log, que o frontend então analisa, destaca (para termos de pesquisa) e exibe, organizando as entradas em grupos para facilitar a leitura. É uma ferramenta essencial para solucionar problemas e verificar os fluxos de trabalho automatizados da integração Adobe Sign e OpenText Content Server.`,
+    videoSrc: 'https://streamable.com/e/cg4d33',
+    repository: 'https://github.com/pbrnx/signature-orchestrator-api',
+    site: 'https://github.com/pbrnx/signature-orchestrator-api',
+    image: 'assets/projects/logview.png'
   }
 ];
 
